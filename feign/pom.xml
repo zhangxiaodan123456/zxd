@@ -6,7 +6,7 @@
 	<artifactId>feign</artifactId>
 	<packaging>jar</packaging>
 
-	<name>zxd</name>
+	<name>zxd</name> 
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
