@@ -19,6 +19,7 @@
 		<module>zuul</module>
         <module>configServer</module>
         <module>myb</module>
+         <module>redis</module>
 	</modules>
 
 	<parent>
