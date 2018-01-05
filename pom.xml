@@ -17,8 +17,8 @@
 		<module>ribbon</module>
 		<module>feign</module>
 		<module>zuul</module>
-<module>configServer</module>
-
+        <module>configServer</module>
+        <module>myb</module>
 	</modules>
 
 	<parent>
