@@ -4,6 +4,7 @@ package com.rb.sz.cmb.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +15,7 @@ import com.rb.sz.cmb.service.impl.RedisService;
 /**
  * Created by bysocket on 07/02/2017.
  */
-@RestController
+@Controller
 @RequestMapping("/city")
 public class CityRestController {
     @Autowired
@@ -28,7 +29,7 @@ public class CityRestController {
     	 System.out.println(redisService.getValue("dan"));
     	 List<City> list= cityService.list();
          System.out.println(list.toString());
-         return "jskjf";
+         return "city";
     }
 
 }
