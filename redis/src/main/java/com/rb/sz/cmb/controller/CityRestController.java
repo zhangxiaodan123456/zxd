@@ -51,7 +51,12 @@ public class CityRestController {
     @Transactional(propagation = Propagation.REQUIRED,isolation = Isolation.DEFAULT,timeout=36000,rollbackFor=Exception.class)
     public String add() {
     	 try {
-    		 loginInfoService.insert();
+    		 LoginInfo log=new LoginInfo();
+    	   	 log.setId(4);
+    	   	 log.setUsername("hah");
+    	   	 log.setPassword("df");
+    	   	 log.setState(0);
+    		 loginInfoService.insert(log);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

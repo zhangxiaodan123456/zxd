@@ -12,5 +12,5 @@ import com.rb.sz.cmb.domain.LoginInfo;
 public interface LoginInfoService {
 	List<LoginInfo> list();
 	
-	public int insert();
+	public int insert(LoginInfo log);
 }

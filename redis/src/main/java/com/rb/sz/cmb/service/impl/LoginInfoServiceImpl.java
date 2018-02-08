@@ -21,14 +21,7 @@ public class LoginInfoServiceImpl implements LoginInfoService{
 		return loginInfoMapper.selectAll();
 	}
 	@Override
-	public int insert() {
-		LoginInfo log=new LoginInfo();
-   	 log.setId(4);
-   	 log.setUsername("hah");
-   	 log.setPassword("df");
-   	 log.setState(0);
-   	 loginInfoMapper.insert(log);
-   	 loginInfoMapper.insert(log);
-	 return 0;
+	public int insert(LoginInfo log) {
+	   	return loginInfoMapper.insert(log);
 	}
 }
